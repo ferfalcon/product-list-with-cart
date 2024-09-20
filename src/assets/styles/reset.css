@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+* {
+  --cl-neutral--100: hsl(0 0% 0%);
+  --cl-neutral--200: hsl(0 0% 10%);
+  --cl-neutral--300: hsl(0 0% 30%);
+  --cl-neutral--400: hsl(0 0% 40%);
+  --cl-neutral--500: hsl(0 0% 50%);
+  --cl-neutral--600: hsl(0 0% 60%);
+  --cl-neutral--700: hsl(0 0% 70%);
+  --cl-neutral--800: hsl(0 0% 90%);
+  --cl-neutral--900: hsl(0 0% 100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+	display: grid;
+  gap: var(--layout-unit-875);
+	align-content: center;
+	margin: 0;
+	min-height: 100svh;
+	scrollbar-gutter: stable;
+  background: gainsboro;
+}
+
+img {
+  /* Scale down images to fit on the screen*/
+  max-inline-size: 100%;
+
+  /* Preserves images' aspect ratio */
+  block-size: auto;
+
+  /* Prevent squashing and stretching */
+  object-fit: cover;
+}

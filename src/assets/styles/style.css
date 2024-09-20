@@ -1,0 +1,37 @@
+@import url('./reset.css');
+
+.rm-list-defaults {
+	margin: 0;
+	padding: 0;
+
+	::marker {
+		content: none;
+	}
+}
+
+main {
+	max-width: 48rem;
+	margin: auto;
+	padding: 4rem 1em 8rem;
+	display: grid;
+
+	aside {
+		padding-top: 4rem;
+	}
+
+	> ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem 3rem;
+	}
+}
+
+footer {
+	background: black;
+	color: gainsboro;
+	padding: .5em 1em;
+
+	a {
+		color: gray;
+	}
+}
